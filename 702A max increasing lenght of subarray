@@ -1,0 +1,47 @@
+/*
+     ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् |
+     उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ||
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+#define int    long long int
+void solve()
+{
+	int n;
+	cin>>n;
+	int arr[n];
+	for(int i=0;i<n;i++)
+	{
+		cin>>arr[i];
+	}
+
+	int l=1;
+	for(int i=0;i<n-1;i++)
+	{
+		if(arr[i+1]>arr[i])
+		{
+			l++;
+		}
+		else
+		{
+			l=1;
+		}
+	}
+
+	cout<<l;
+
+
+}
+int32_t main()
+{
+	int t=1;
+	//cin>>t;
+	while(t--)
+	{
+		solve();
+	}
+
+	return 0;
+}
