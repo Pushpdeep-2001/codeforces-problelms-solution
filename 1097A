@@ -1,0 +1,28 @@
+/*
+     ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम् |
+     उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय माऽमृतात् ||
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	string str;
+	cin>>str;
+	string s;
+	int p=0;
+	for(int i=0;i<5;i++)
+	{
+		cin>>s;
+		if(s[0]==str[0] || s[1]==str[1])
+		{
+			cout<<"YES";
+			return 0;
+		}
+	}
+	cout<<"NO";
+
+	return 0;
+
+}
